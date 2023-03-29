@@ -1,12 +1,9 @@
 const routerUser = require('express').Router();
 
 routerUser.get('/user', (req, res) => {
-    const {page, total} = req.query;
-    res.send({
+    res.json({
         status: 'success',
         message: 'welcome user',
-        page,
-        total,
     })
 })
 

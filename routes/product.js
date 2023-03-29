@@ -6,7 +6,7 @@ const path = require('path')
 
 routerProduct.get('/', (req, res) => {
     const {page, total} = req.query;
-    res.send({
+    res.json({
         status: 'success',
         message: 'welcome to express js',
         page,
